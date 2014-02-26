@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'commons-io:commons-io:2.4'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+jar {
+    from (configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) }) {
+        exclude 'META-INF/*'
+    }
+    manifest.attributes('Main-Class': 'com.westernacher.playground.UrlConnector')
+}
