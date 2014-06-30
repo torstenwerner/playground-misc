@@ -11,7 +11,7 @@ public class CsvConverter {
     private static String[] resultColumns = new String[] { "SchuldnerID", "SchuldnerTyp", "GläubigerID",
             "Buchungskreis", "KunKtoInhaber", "KunKtoNummer", "KunBLZ", "KunIBAN", "KunBIC", "Bankname",
             "Mandatsreferenz", "KunKONTO_VON", "KunKONTO_BIS", "Zahlart", "Mandat_aktiv", "KUNDE_PLZ",
-            "KUNDE_ORT", "KUNDE_ADRESSE", "KUNDE_LAND"
+            "KUNDE_ORT", "KUNDE_ADRESSE", "KUNDE_LAND" //, "KUNDE_FIRMA", "KUNDE_ABT", "StatusGruppe"
     };
 
     public static void main(String[] args) throws IOException {
