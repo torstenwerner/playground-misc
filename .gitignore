@@ -3,3 +3,6 @@
 out/
 build/
 *.iml
+jdbcclient/jdbcclient.properties
+atlassian-ide-plugin.xml
+ojdbc6.jar
